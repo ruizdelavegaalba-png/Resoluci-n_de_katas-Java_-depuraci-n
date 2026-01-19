@@ -1,0 +1,45 @@
+# Resolución de Katas y Depuración en Java
+
+En esta actividad he resuelto dos problemas de lógica (katas) y he practicado cómo usar las herramientas de depuración de VS Code para entender el flujo del código.
+
+---
+
+## 1. Kata 1: FizzBuzz
+El objetivo es imprimir números del 1 al 100, sustituyendo los múltiplos de 3 por "Fizz", los de 5 por "Buzz" y los de ambos por "FizzBuzz". He resuelto este ejercicio sin usar bucles, utilizando una función recursiva.
+
+### Código de la solución
+![Código FizzBuzz](Captura%20de%20pantalla%202026-01-16%20192355.png)
+
+### Proceso de Depuración
+He colocado puntos de interrupción (breakpoints) en la lógica de decisión para observar cómo cambia la variable `numero`.
+
+* **Punto de interrupción inicial:** Aquí se ve el programa detenido justo al empezar, cuando el valor de `numero` es 1.
+![Debug FizzBuzz 1](Captura%20de%20pantalla%202026-01-19%20173740.png)
+
+* **Seguimiento del flujo:** En esta captura se observa cómo el programa sigue evaluando las condiciones después de avanzar en la ejecución.
+![Debug FizzBuzz 2](Captura%20de%20pantalla%202026-01-19%20175214.png)
+
+---
+
+## 2. Kata 2: Tamagotchi v1.0
+He implementado una mascota virtual con atributos de hambre, energía y humor, todos iniciando con un valor de 4. La mascota cambia su estado emocional (caritas) dependiendo de las acciones de jugar, comer o dormir.
+
+### Código de la solución
+![Código Tamagotchi](Captura%20de%20pantalla%202026-01-19%20174359.png)
+
+### Proceso de Depuración
+He analizado cómo las acciones afectan a las variables internas del objeto.
+
+* **Estado de variables al jugar:** Al detener el código en el método `play`, puedo ver en el panel de la izquierda cómo están los valores de `hunger`, `energy` y `mood` en ese instante.
+![Debug Tamagotchi Variables](Captura%20de%20pantalla%202026-01-19%20174741.png)
+
+* **Lógica de estados:** Aquí el programa se detiene en el método `obtenerEstado` para decidir qué carita mostrar según los nuevos valores de los atributos.
+![Debug Tamagotchi Estado](Captura%20de%20pantalla%202026-01-19%20174912.png)
+
+---
+
+## Conclusiones sobre la depuración
+Gracias al uso del modo Debug de VS Code, he aprendido a:
+1. Poner **breakpoints** en líneas clave para pausar la ejecución.
+2. Usar el panel de **Variables** para comprobar valores en tiempo real sin usar `System.out.println`.
+3. Controlar el avance del programa paso a paso para localizar posibles fallos en la lógica.
