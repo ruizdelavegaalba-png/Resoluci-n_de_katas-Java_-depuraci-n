@@ -10,7 +10,7 @@ public class Tamagotchi {
         System.out.println("Jugando: " + miMascota.play());
         System.out.println("Comiendo: " + miMascota.eat());
         System.out.println("Durmiendo: " + miMascota.sleep());
-        System.out.println("Estado final -> Hambre: " + miMascota.hunger + ", Energía: " + miMascota.energy + ", Humor: " + miMascota.mood);
+        System.out.println("Estado final -> Hambre: " + miMascota.hunger + ", Energia: " + miMascota.energy + ", Humor: " + miMascota.mood);
     }
     public String play() {
         hunger = hunger + 1;
