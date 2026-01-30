@@ -3,6 +3,19 @@ public class Tamagotchi {
     int hunger = 4;
     int energy = 4;
     int mood = 4;
+<<<<<<< HEAD
+=======
+
+    public static void main(String[] args) {
+        Tamagotchi miMascota = new Tamagotchi();
+
+        System.out.println("Probando Tamagotchi");
+        System.out.println("Jugando: " + miMascota.play());
+        System.out.println("Comiendo: " + miMascota.eat());
+        System.out.println("Durmiendo: " + miMascota.sleep());
+        System.out.println("Estado final -> Hambre: " + miMascota.hunger + ", Energia: " + miMascota.energy + ", Humor: " + miMascota.mood);
+    }
+>>>>>>> 82f5c33343aeb16ca6abfd276dc526e9e7a69834
     public String play() {
         //Función: Aumenta el hambre (+1) y el humor (+1), pero gasta energía (-1).
         hunger = hunger + 1;
@@ -38,5 +51,8 @@ public class Tamagotchi {
         }
         return ":-|";
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> 82f5c33343aeb16ca6abfd276dc526e9e7a69834
 }
